@@ -98,7 +98,6 @@ func (i *InventoriesService) GetInventory(id int, params map[string]string) (*In
 	}
 
 	return result, nil
-
 }
 
 // DeleteInventory delete an inventory from AWX

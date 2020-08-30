@@ -680,3 +680,39 @@ type Host struct {
 	InsightsSystemID     interface{}  `json:"insights_system_id"`
 	AnsibleFactsModified interface{}  `json:"ansible_facts_modified"`
 }
+
+type InventorySource struct {
+	Created               time.Time   `json:"created"`
+	Credential            interface{} `json:"credential"`
+	CustomVirtualenv      interface{} `json:"custom_virtualenv"`
+	Description           string      `json:"description"`
+	GroupBy               string      `json:"group_by"`
+	ID                    int         `json:"id"`
+	InstanceFilters       string      `json:"instance_filters"`
+	Inventory             int         `json:"inventory"`
+	LastJobFailed         bool        `json:"last_job_failed"`
+	LastJobRun            interface{} `json:"last_job_run"`
+	LastUpdateFailed      bool        `json:"last_update_failed"`
+	LastUpdated           interface{} `json:"last_updated"`
+	Modified              time.Time   `json:"modified"`
+	Name                  string      `json:"name"`
+	NextJobRun            interface{} `json:"next_job_run"`
+	Overwrite             bool        `json:"overwrite"`
+	OverwriteVars         bool        `json:"overwrite_vars"`
+	Related               *Related    `json:"related"`
+	Source                string      `json:"source"`
+	SourcePath            string      `json:"source_path"`
+	SourceProject         int         `json:"source_project"`
+	SourceRegions         string      `json:"source_regions"`
+	SourceScript          interface{} `json:"source_script"`
+	SourceVars            string      `json:"source_vars"`
+	Status                string      `json:"status"`
+	SummaryFields         *Summary    `json:"summary_fields"`
+	Timeout               int         `json:"timeout"`
+	Type                  string      `json:"type"`
+	UpdateCacheTimeout    int         `json:"update_cache_timeout"`
+	UpdateOnLaunch        bool        `json:"update_on_launch"`
+	UpdateOnProjectUpdate bool        `json:"update_on_project_update"`
+	URL                   string      `json:"url"`
+	Verbosity             int         `json:"verbosity"`
+}
